@@ -9,6 +9,17 @@ Secondry Heading Color (Cyan Cornflower Blue): #297BB8
 Secondry Heading Color (Byzantine): #9D249F
 Link Color (Cyan Cornflower Blue): #297BB8
 */
+
+
+/* Set the box-sizing to border-box on all the elements */
+* {
+  box-sizing: border-box;
+}
+
+header, main{
+  padding: 3%;
+}
+
 /* Define font-size, font-weight and line-height for all your default text elements (body, headers, etc.) */
 Body {
   background-color: ;
@@ -48,19 +59,19 @@ h4 {
 
 /* Create link stylings */
 a {
-  color: #297BB8;
+  color: black;
   text-decoration: none;
   /* No Underlining link with blue color*/
 }
 
 a:visited {
-  color: #8A2BE2;
+  color: black;
   /* visited link with Blue-Violet*/
 }
 
 a:hover,
 a:focus {
-  color: #ff0000;
+  color: gray;
   text-decoration: none;
   /* Underlining when hovering/focus with red color*/
 }
@@ -70,7 +81,7 @@ a:active {
   /* selected link with blue color*/
 }
 
-/* Create a button styling for the “Learn more” button */
+/* Create a button styling for the “Learn more”, and view case study buttons */
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block */
@@ -78,11 +89,12 @@ a:active {
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #000000;
+  padding: 0.6rem 2.6rem;
+  border-radius: 4px;
+  border: 1px solid #000000;
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  margin: 10px;
 }
 
 .button:visited {
@@ -94,57 +106,154 @@ a:active {
   color: #000000;
 }
 
-
-/* Create a button styling for the “View case study” button */
-.button.casestudy {
-  display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block */
-  background-color: #000000;
-  color: #ffffff;
-  /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border: 1px solid #000000;
-  /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
-
-.button:visited {
-  color: #ffffff;
-}
-
-.button.casestudy:hover {
-  background-color: #ebeae6;
-  color: #000000;
-}
-
 /* Create a button styling for the “View full style guide” button */
 .button.styleguide {
-  display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #B8705C;
-  color: #ffffff;
-  /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border: 1px solid #B8705C;
-  /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
-
-.button:visited {
-  color: #ffffff;
+  border-color: #B8705C;
 }
 
 .button.styleguide:hover {
   background-color: #2A3E46;
+  border-color: #2A3E46;
   color: #ffffff;
-  border: 1px solid #2A3E46;
 }
 
 /* Set a 100% width for images */
 img {
   width: 100%;
+}
+
+/* Add CSS styling to the header and navigation bar */
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo {
+  max-width: 10%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-right: 40px;
+  margin-left: 10px;
+}
+
+.designer {
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+nav {
+  display: block;
+  clear: both;
+}
+
+nav>ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Add CSS styling to the hero section */
+#hero_section {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#hero_section h1 {
+  margin: 0px;
+  padding: 0.6rem 0;
+  text-align: center;
+}
+
+#hero_section p {
+  text-align: left;
+}
+
+#my_pic {
+  border-radius: 50%;
+  border: solid 5px #297BB8;
+  width: 60%;
+}
+
+/* Add CSS styling to the work section */
+#work_section {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#work_section h3 {
+  margin: 0px;
+  padding: 0.6rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+#work_section h4 {
+  margin: 0px;
+  text-align: center;
+}
+
+#work_section p {
+  text-align: left;
+}
+
+/* Add CSS styling to your footer (contact) section.*/
+
+footer{
+  background-color: #ebeae6;
+  padding: 5px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+footer>div {
+  display: block;
+  clear: both;
+}
+
+footer>div>ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer>div>ul>li {
+  display: inline-block;
+}
+
+footer>div>ul>li>a {
+  padding: 0 15px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.Copyright{
+  padding: 5px 0;
 }

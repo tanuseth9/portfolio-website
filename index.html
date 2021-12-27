@@ -12,60 +12,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body id=body_index_page  class="body">
+<body id=body_index_page class="body">
   <header>
-    <div>
-          <img src="img/home_page/tanu_seth_logo.png" alt="Tanu Seth">
-          <div>
-            <h2>UX/UI Designer</h2>
-          </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://www.linkedin.com/in/tanuseth9/"target="_blank">LinkedIn</a></li>
-          <li><a href="files/Tanu_Seth_Resume.pdf" target="_blank">Resume</a></li>
-        </ul>
-      </nav>
-    </div>
+    <img class="logo" src="img/home_page/tanu_seth_logo.png" alt="Logo">
+    <h2 class="designer">UX/UI Designer</h2>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <div>
       <br>
       <!--Start Hero Section-->
-      <div id="hero_section">
-        <h1>Hi, I am Tanu Seth!</h1>
-        <p>Welcome to my portfolio. I am a Product Designer (UX/UI) with an</br>
-          education in computer science and technology focused on creating</br>
-          experiences that are meaningful and valuable for a customer with</br>
-          mobile first approach in mind. I aim for the entire user experience to</br>
-          be inclusive, appealing and user centered. I involve users throughout</br>
-          the design process via a variety of research and design techniques to</br>
-          create highly usable and accessible product.</p>
+      <div id="hero_section" class="container">
         <picture>
           <source media="(max-width:767px)" srcset="img/about_page/my_pic@1x.png">
-          <img src="img/about_page/my_pic@2x.png" alt="My Image">
+          <img src="img/about_page/my_pic@2x.png" id="my_pic" alt="My Image">
         </picture>
-        </br>
-        </br>
+        <h1>Hi, I am Tanu Seth!</h1>
+        <p>Welcome to my portfolio. I am a Product Designer (UX/UI) with an education in computer science and technology focused on creating experiences that are meaningful and valuable for a customer with mobile first approach in mind. I aim for the entire user experience to be inclusive, appealing and user centered. I involve users throughout the design process via a variety of research and design techniques to create highly usable and accessible product.</p>
         <a href="about.html" class="button">Learn More</a>
       </div>
-      </br>
-      </br>
+      <br>
       <!--Start work Section-->
       <div id="work_section">
-        <div>
-          <h2>Recent Projects</h2>
-          <h3>Tanu Seth. 2020 - 2021</h3>
+        <div class="container">
+          <h3>Recent Projects</h3>
+          <h4>Tanu Seth. 2020 - 2021</h4>
         </div>
         <br>
-        <div>
+        <div class="row">
           <br>
           <!--start first project-->
           <div>
-            <br>
             <div>
               <picture>
                 <source media="(max-width:767px)" srcset="img/home_page/paylight/paylight@.5x.png">
@@ -74,11 +57,8 @@
             </div>
             <div>
               <h3>PayLight - UX/UI Case Study</h3>
-              <p>PayLight is a virtual wallet mobile web app. As a sole UX/UI</br>
-                designer, I designed this project in Figma from inception to </br>
-                final visual design through research, ideation and design</br>
-                thinking methodologies.</p>
-              <a href="https://www.tanuseth.com/paylight" class="button casestudy">View Case Study</a>
+              <p>PayLight is a virtual wallet mobile web app. As a sole UX/UI designer, I designed this project in Figma from inception to           final visual design through research, ideation and design thinking methodologies.</p>
+              <a href="https://www.tanuseth.com/paylight" class="button">View Case Study</a>
             </div>
           </div>
         </div>
@@ -95,12 +75,8 @@
           </div>
           <div>
             <h3>Perfect Home - UI Case Study</h3>
-            <p>Perfect Home is a real estate responsive web app that gives</br>
-              the platform to users to buy, rent, and sell their property in the </br>
-              best possible way. As a sole UI designer, I designed this app</br>
-              in Figma by applying visual design fundamentals and</br>
-              methodologies.</p>
-            <a href="perfect_home.html" class="button casestudy">View Case Study</a>
+            <p>Perfect Home is a real estate responsive web app that gives the platform to users to buy, rent, and sell their property in the        best possible way. As a sole UI designer, I designed this app in Figma by applying visual design fundamentals and            methodologies.</p>
+            <a href="perfect_home.html" class="button">View Case Study</a>
           </div>
         </div>
         <!--end second project-->
@@ -116,33 +92,29 @@
           </div>
           <div>
             <h3>Langoon - UX Case Study</h3>
-            <p>Langoon learning is a language learning mobile web app. I</br>
-              designed this project in Adobe XD from start to finish through </br>
-              design thinking process which includes research and</br>
-              development of strategic design solutions with Google</br>
-              Material Design guidelines, and usability testing.</p>
-            <a href="https://www.tanuseth.com/langoon-case-study" class="button casestudy">View Case Study</a>
+            <p>Langoon learning is a language learning mobile web app. I designed this project in Adobe XD from start to finish through               design thinking process which includes research and development of strategic design solutions with Google Material Design guidelines, and usability testing.</p>
+            <a href="https://www.tanuseth.com/langoon-case-study" class="button">View Case Study</a>
           </div>
         </div>
         <!--end Third project-->
         </br>
         </br>
       </div>
-      </div>
+    </div>
   </main>
   <footer id="contact_section">
     <!--Start Footer Section-->
-    <div>
-      <h3>TANU SETH | UX DESIGNER</h3>
+    <div class="container">
+      <h4>TANU SETH | UX DESIGNER</h4>
     </div>
     <div>
       <ul>
-      <li><a href="mailto:office@careerfoundry.com">Email</a></li>
-      <li><a href="files/Tanu_Seth_Resume.pdf" target="_blank">Resume</a></li>
-      <li><a href="https://www.linkedin.com/in/tanuseth9" target="_blank">LinkedIn</a></li>
-    </ul>
+        <li><a href="mailto:office@careerfoundry.com">Email</a></li>
+        <li><a href="files/Tanu_Seth_Resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="https://www.linkedin.com/in/tanuseth9" target="_blank">LinkedIn</a></li>
+      </ul>
     </div>
-    <div>
+    <div class="Copyright">
       <p>Copyright Tanu Seth 2021</p>
     </div>
   </footer>
