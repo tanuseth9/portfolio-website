@@ -189,7 +189,7 @@ nav>ul>li>a {
   text-align: left;
 }
 
-#my_pic {
+#my_circle_pic{
   border-radius: 50%;
   border: solid 5px #297BB8;
   width: 60%;
@@ -256,4 +256,68 @@ footer>div>ul>li>a {
 
 .Copyright{
   padding: 5px 0;
+}
+
+/* Style the layouts for About page */
+#my_square_pic{
+  border-radius: 4px;
+  border: solid 5px #297BB8;
+  width: 60%;
+}
+
+#about_me {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#about_me  p {
+  text-align: left;
+}
+
+#DT_process{
+  text-align: center;
+}
+
+#my_tool{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Style the layouts for Perfect Home Case Study page */
+#main_image{
+  margin-top: 30px;
+}
+
+#styleguide_button{
+  text-align: center;
+}
+
+#body_perfecthome_page h1{
+  color: #2A3E46
+}
+
+.key_features h3{
+  background-color: #2A3E46;
+  color:#ffffff;
+  padding: 30px 30px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+.sub_headings h3{
+  color: #B8705C;
+}
+
+/* 1 rem= 16px */
+.responsive_design h4{
+  border-bottom: solid 3px #B8705C;
+  width: 7rem;
+  font-weight: bold;
+}
+
+#tab_img{
+  margin-bottom: 30px;
 }
