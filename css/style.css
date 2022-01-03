@@ -22,12 +22,10 @@ header, main{
 
 /* Define font-size, font-weight and line-height for all your default text elements (body, headers, etc.) */
 Body {
-  background-color: ;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  /* Sets the font size to 16px */
+
   font-weight: 300;
-  /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
@@ -38,23 +36,29 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2rem;
   font-weight: 700;
+  margin: 0;
+  vertical-align: top;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.60rem;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1rem;
   font-weight: 400;
+  margin: 0;
+}
+ul{
+  margin: 0;
 }
 
 /* Create link stylings */
@@ -106,6 +110,10 @@ a:active {
   color: #000000;
 }
 
+.div_button{
+  text-align: center;
+}
+
 /* Create a button styling for the “View full style guide” button */
 .button.styleguide {
   background-color: #B8705C;
@@ -125,34 +133,31 @@ img {
 
 /* Add CSS styling to the header and navigation bar */
 header {
-  background-color: #ffffff;
   text-align: center;
   padding: 10px 0;
 }
 
 .logo {
   max-width: 10%;
-  text-align: center;
   display: inline-block;
-  position: relative;
-  float: left;
-  margin-right: 40px;
+  margin-right: 30px;
   margin-left: 10px;
+  float: left;
+
 }
 
 .designer {
   display: inline-block;
-  position: relative;
-  float: left;
+  margin-right: 80px;
 }
 
 nav {
-  display: block;
-  clear: both;
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
 }
 
 nav>ul {
-  display: block;
   list-style-type: none;
   padding: 0;
 }
@@ -179,6 +184,15 @@ nav>ul>li>a {
   text-align: center;
 }
 
+.my_name{
+  text-align: center;
+  margin-bottom: 0px
+}
+
+.pic-div{
+  text-align: center;
+}
+/* 1 rem= 16px */
 #hero_section h1 {
   margin: 0px;
   padding: 0.6rem 0;
@@ -192,8 +206,9 @@ nav>ul>li>a {
 #my_circle_pic{
   border-radius: 50%;
   border: solid 5px #297BB8;
-  width: 60%;
+  width: 55%;
 }
+
 
 /* Add CSS styling to the work section */
 #work_section {
@@ -205,8 +220,9 @@ nav>ul>li>a {
 }
 
 #work_section h3 {
-  margin: 0px;
-  padding: 0.6rem 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding:  0;
   text-align: center;
   font-weight: bold;
 }
@@ -234,17 +250,17 @@ footer>div {
   clear: both;
 }
 
-footer>div>ul {
+footer>div>div>ul {
   display: block;
   list-style-type: none;
   padding: 0;
 }
 
-footer>div>ul>li {
+footer>div>div>ul>li {
   display: inline-block;
 }
 
-footer>div>ul>li>a {
+footer>div>div>ul>li>a {
   padding: 0 15px;
   text-transform: capitalize;
   text-decoration: underline;
@@ -252,6 +268,9 @@ footer>div>ul>li>a {
   font-size: 16px;
   font-weight: 700;
   color: #000000;
+}
+.contact_detail{
+margin-top: 1%;
 }
 
 .Copyright{
@@ -277,13 +296,33 @@ footer>div>ul>li>a {
   text-align: left;
 }
 
+#about_me  h1{
+  font-size: 1.80rem;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
 #DT_process{
   text-align: center;
+}
+
+#DT_process > h1{
+  font-size: 1.40rem;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 #my_tool{
   text-align: center;
   margin-bottom: 30px;
+
+}
+
+#my_tool > h1{
+  font-size: 1.40rem;
+  margin-bottom: 25px;
+  margin-top: 25px;
+
 }
 
 /* Style the layouts for Perfect Home Case Study page */
@@ -321,3 +360,157 @@ footer>div>ul>li>a {
 #tab_img{
   margin-bottom: 30px;
 }
+
+[class*="col-"] {
+ float: left;
+ display: block;
+ }
+
+.row::after {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+/* Add  two media queries: one for medium screen sizes and one for large screen sizes for the breakpoints,
+and add code inside of your media queries to ensure your site is responsive and looks good on any device */
+
+/* Medium devices (640px and larger)*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding:20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .logo{
+    width: 8%;
+    margin-right: 30px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  footer>div{
+    clear:none;
+  }
+  .left-col{
+    width:50%;
+    padding:0;
+  }
+  .right-col{
+    width:50%;
+    padding:0;
+    padding-left: 40px;
+  }
+  #my_circle_pic{
+    width: 80%
+  }
+  img {
+    width: 90%;
+  }
+  #my_square_pic{
+    width: 45%;
+    margin-top: 40px;
+  }
+  #about_me  p{
+    padding: 0 20px;
+  }
+  #about_me  h1{
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+  #DT_process > h1{
+    font-size: 1.6rem;
+  }
+  #my_tool > h1{
+    font-size: 1.6rem;
+  }
+
+}
+
+/* Larger devices (1024px or larger)*/
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding:20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    margin-right: 50px;
+  }
+  .col-lg-5 {
+    width: 50%;
+    margin: auto;
+  }
+  .logo{
+    width: 4%;
+    margin-right: 30px;
+  }
+
+  #my_circle_pic{
+    width: 50%
+  }
+  footer>div{
+    clear:none;
+  }
+  .ux_designer{
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 1%;
+    float: left;
+    display: inline-block;
+  }
+  .contact_detail{
+    text-align: left;
+    padding-right: 5%;
+    padding-top: 1%;
+    float: right;
+    display: inline-block;
+    margin: 0;
+  }
+  .left-col{
+   width:60%;
+   padding:0;
+ }
+ .right-col{
+   width:40%;
+   padding:0;
+   padding-left: 40px;
+ }
+ img {
+   width: 80%;
+ }
+ #about_me  p{
+   padding: 0 20px;
+ }
+ #my_square_pic{
+   width: 30%;
+   margin-top: 10px;
+ }
+ #DT_process > h1{
+   font-size: 2rem;
+ }
+ #my_tool > h1{
+   font-size: 2rem;
+ }
+}
+
+
+/* Make changes to the header. It should be centered, and the logo and navigation menu should be horizontally aligned.*/
+
+/* Use a 2-column layout. On your home page, you should use a 2-column layout for your projects, and on your about page,
+ you should use a 2-column layout for the “Skills & Tools” section. */
+
+
+
+
+/* .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+} */ */
