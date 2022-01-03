@@ -28,14 +28,23 @@
     <div>
       <br>
       <!--Start Hero Section-->
-      <div id="hero_section" class="container">
-        <picture>
-          <source media="(max-width:767px)" srcset="img/about_page/my_pic@1x.png">
-          <img src="img/about_page/my_pic@2x.png" id="my_circle_pic" alt="My Image">
-        </picture>
-        <h1>Hi, I am Tanu Seth!</h1>
-        <p>Welcome to my portfolio. I am a Product Designer (UX/UI) with an education in computer science and technology focused on creating experiences that are meaningful and valuable for a customer with mobile first approach in mind. I aim for the entire user experience to be inclusive, appealing and user centered. I involve users throughout the design process via a variety of research and design techniques to create highly usable and accessible product.</p>
-        <a href="about.html" class="button">Learn More</a>
+      <div id="hero_section container row">
+        <div class="column col-md-6 col-lg-5 pic-div left-col">
+          <picture>
+            <source media="(max-width:767px)" srcset="img/about_page/my_pic@1x.png">
+            <img src="img/about_page/my_pic@2x.png" id="my_circle_pic" alt="My Image">
+          </picture>
+        </div>
+        <div class="column col-md-6 col-lg-5 right-col">
+          <div class="my_name">
+          <h1>Hi, I am Tanu Seth!</h1>
+          </div>
+          <p>Welcome to my portfolio. I am a Product Designer (UX/UI) with an education in computer science and technology focused on creating experiences that are meaningful and valuable for a customer with mobile first approach in mind. I aim for
+            the entire user experience to be inclusive, appealing and user centered. I involve users throughout the design process via a variety of research and design techniques to create highly usable and accessible product.</p>
+          <div class="div_button">
+              <a href="about.html" class="button">Learn More</a>
+          </div>
+      </div>
       </div>
       <br>
       <!--Start work Section-->
@@ -45,75 +54,78 @@
           <h4>Tanu Seth. 2020 - 2021</h4>
         </div>
         <br>
-        <div class="row">
-          <br>
-          <!--start first project-->
-          <div>
-            <div>
+        <br>
+        <!--start first project-->
+        <div class="work_section row container">
+            <div class= "column col-md-6 col-lg-5 left-col">
               <picture>
                 <source media="(max-width:767px)" srcset="img/home_page/paylight/paylight@.5x.png">
                 <img src="img/home_page/paylight/paylight@1x.png" alt="Paylight Image">
               </picture>
             </div>
-            <div>
+            <div class="column col-md-6 col-lg-5 right-col">
               <h3>PayLight - UX/UI Case Study</h3>
-              <p>PayLight is a virtual wallet mobile web app. As a sole UX/UI designer, I designed this project in Figma from inception to           final visual design through research, ideation and design thinking methodologies.</p>
+              <p>PayLight is a virtual wallet mobile web app. As a sole UX/UI designer, I designed this project in Figma from inception to final visual design through research, ideation and design thinking methodologies.</p>
               <a href="https://www.tanuseth.com/paylight" class="button">View Case Study</a>
             </div>
           </div>
-        </div>
         <!--end first project-->
         </br>
         </br>
-        <div>
-          <!--start second project-->
-          <div>
+        <!--start second project-->
+        <div class="work_section row container">
+          <div class= "column col-md-6 col-lg-5 left-col">
             <picture>
               <source media="(max-width:767px)" srcset="img/home_page/perfect_home/perfect_home@.5x.png">
               <img src="img/home_page/perfect_home/perfect_home@1x.png" alt="Perfect Home Image">
             </picture>
           </div>
-          <div>
+          <div class= "column col-md-6  col-lg-5 right-col">
             <h3>Perfect Home - UI Case Study</h3>
-            <p>Perfect Home is a real estate responsive web app that gives the platform to users to buy, rent, and sell their property in the        best possible way. As a sole UI designer, I designed this app in Figma by applying visual design fundamentals and            methodologies.</p>
+            <p>Perfect Home is a real estate responsive web app that gives the platform to users to buy, rent, and sell their property in the best possible way. As a sole UI designer, I designed this app in Figma by applying visual design
+              fundamentals and methodologies.</p>
             <a href="perfect_home.html" class="button">View Case Study</a>
           </div>
         </div>
         <!--end second project-->
         </br>
         </br>
-        <div>
           <!--start Third project-->
-          <div>
+        <div class="work_section row container">
+          <div class= "column col-md-6 col-lg-5 left-col">
             <picture>
               <source media="(max-width:767px)" srcset="img/home_page/langoon/langoon@.5x.png">
               <img src="img/home_page/langoon/langoon@1x.png" alt="langoon Image">
             </picture>
           </div>
-          <div>
+          <div class= "column col-md-6 col-lg-5 right-col">
             <h3>Langoon - UX Case Study</h3>
-            <p>Langoon learning is a language learning mobile web app. I designed this project in Adobe XD from start to finish through               design thinking process which includes research and development of strategic design solutions with Google Material Design guidelines, and usability testing.</p>
+            <p>Langoon learning is a language learning mobile web app. I designed this project in Adobe XD from start to finish through design thinking process which includes research and development of strategic design solutions with Google Material
+              Design guidelines, and usability testing.</p>
             <a href="https://www.tanuseth.com/langoon-case-study" class="button">View Case Study</a>
           </div>
         </div>
         <!--end Third project-->
-        </br>
-        </br>
+        <br>
+        <br>
       </div>
     </div>
   </main>
-  <footer id="contact_section"> <!--Start Footer Section-->
-    <div class="container">
+  <footer id="contact_section">
+    <!--Start Footer Section-->
+    <div class="row">
+    <div class="container ux_designer">
       <h4>TANU SETH | UX DESIGNER</h4>
     </div>
-    <div>
+    <div class="contact_detail">
       <ul>
         <li><a href="mailto:office@careerfoundry.com">Email</a></li>
         <li><a href="files/Tanu_Seth_Resume.pdf" target="_blank">Resume</a></li>
         <li><a href="https://www.linkedin.com/in/tanuseth9" target="_blank">LinkedIn</a></li>
       </ul>
     </div>
-    <div class="Copyright">
+  </div>
+    <div class="Copyright row">
       <p>Copyright Tanu Seth 2021</p>
     </div>
   </footer>
