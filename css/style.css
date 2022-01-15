@@ -374,6 +374,7 @@ footer>div>div>ul>li>a {
   border-radius: 4px;
   border: solid 5px #297BB8;
   width: 60%;
+  margin-top: 30px;
 }
 
 #about_me {
@@ -673,7 +674,7 @@ and add code inside of your media queries to ensure your site is responsive and 
 
   #my_square_pic {
     width: 45%;
-    margin-top: 40px;
+    margin-top: 70px;
   }
 
   #about_me p {
@@ -840,7 +841,6 @@ and add code inside of your media queries to ensure your site is responsive and 
 
   #my_square_pic {
     width: 30%;
-    margin-top: 10px;
   }
 
   #DT_process>h1 {
