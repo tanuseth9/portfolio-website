@@ -9,26 +9,37 @@ Secondry Heading Color (Cyan Cornflower Blue): #297BB8
 Secondry Heading Color (Byzantine): #9D249F
 Link Color (Cyan Cornflower Blue): #297BB8
 */
-
-
 /* Set the box-sizing to border-box on all the elements */
 * {
   box-sizing: border-box;
 }
 
-header, main{
-  padding: 3%;
+header, main {
+  padding: 5%;
+}
+
+header{
+  padding: 10px 0 4px;
+  padding-right: 0;
+  position: fixed;
+  width: 100%;
+  background-color:#ffffff;
+  box-shadow:  2px 1px 5px 0 gray;
+}
+
+main {
+  padding-top: 56px;
 }
 
 /* Define font-size, font-weight and line-height for all your default text elements (body, headers, etc.) */
 Body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-
   font-weight: 300;
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
+  display: inline;
 }
 
 h1, h2, h3, h4 {
@@ -57,10 +68,12 @@ h4 {
   font-weight: 400;
   margin: 0;
 }
-p{
+
+p {
   font-size: 0.9rem;
 }
-ul{
+
+ul {
   margin: 0;
 }
 
@@ -69,12 +82,11 @@ a {
   color: #187bc0;
   text-decoration: none;
   font-weight: bold;
-
   /* No Underlining link with blue color*/
 }
 
 a:visited {
-  color: black;
+  /* color: black; */
   /* visited link with Blue-Violet*/
 }
 
@@ -91,6 +103,7 @@ a:active {
   /* Underlining when hover
   /* selected link with blue color*/
 }
+
 /* .active_selected{
   border: none;
   outline: none;
@@ -99,7 +112,6 @@ a:active {
   color: black;
   cursor: pointer;
 } */
-
 /* Create a button styling for the “Learn more”, and view case study buttons and Add a transition to your buttons. */
 .button {
   display: inline-block;
@@ -111,8 +123,7 @@ a:active {
   text-decoration: none;
   padding: 0.6rem 2.6rem;
   border-radius: 4px;
-  border-bottom: 2px solid #000000;
-  /* width of the border, type, color */
+  border-bottom: 2px solid #000000; /* width of the border, type, color */
   transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
   /*transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];*/
   margin: 10px;
@@ -129,7 +140,7 @@ a:active {
   opacity: 0.8;
 }
 
-.div_button{
+.div_button {
   text-align: center;
 }
 
@@ -148,25 +159,29 @@ a:active {
 }
 
 /* Set a 100% width for images */
-.features{
+.features {
   text-align: center;
 }
-.low_mid_screens{
+
+.low_mid_screens {
   text-align: center;
 }
+
 img {
   width: 100%;
 }
-.key_features_gif{
+
+.key_features_gif {
   width: 50%;
 }
-.both_screens{
-    width: 50%;
+
+.both_screens {
+  width: 50%;
 }
 
 /* Add CSS styling to the header and navigation bar */
 header {
-  text-align: center;
+  /* text-align: center; */
   padding: 10px 0;
 }
 
@@ -178,26 +193,31 @@ header {
   float: left;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
 .designer {
   display: inline-block;
   margin-right: 80px;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+
 }
 
-nav {
+/* nav {
   display: inline-block;
   width: 100%;
   margin-top: 15px;
-}
+} */
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
+  }
 
-nav>ul>li {
+/* nav>ul>li {
   display: inline-block;
-}
+} */
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -206,6 +226,31 @@ nav>ul>li>a {
   font-size: 18px;
   font-weight: 700;
   color: #000000;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /* Add CSS styling to the hero section */
@@ -217,16 +262,18 @@ nav>ul>li>a {
   text-align: center;
 }
 
-.pic-div{
+.pic-div {
   text-align: center;
 }
+
 /* 1 rem= 16px */
 #hero_section h1 {
   margin: 0px;
   padding: 0.6rem 0;
   text-align: center;
 }
-.my_name h1{
+
+.my_name h1 {
   font-size: 1.6rem;
 }
 
@@ -234,12 +281,11 @@ nav>ul>li>a {
   text-align: left;
 }
 
-#my_circle_pic{
+#my_circle_pic {
   border-radius: 50%;
   border: solid 5px #297BB8;
   width: 55%;
 }
-
 
 /* Add CSS styling to the work section */
 #work_section {
@@ -253,7 +299,7 @@ nav>ul>li>a {
 #work_section h2 {
   margin-top: 20px;
   margin-bottom: 0;
-  padding:  0;
+  padding: 0;
   text-align: center;
   font-weight: bold;
   font-size: 1.5rem;
@@ -262,7 +308,7 @@ nav>ul>li>a {
 #work_section h3 {
   margin-top: 20px;
   margin-bottom: 0;
-  padding:  0;
+  padding: 0;
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
@@ -278,14 +324,14 @@ nav>ul>li>a {
 }
 
 /* Add CSS styling to your footer (contact) section.*/
-
-footer{
+footer {
   background-color: #ebeae6;
   padding: 5px 0;
   display: inline-block;
   width: 100%;
   text-align: center;
 }
+
 footer>div {
   display: block;
   clear: both;
@@ -311,20 +357,20 @@ footer>div>div>ul>li>a {
   color: #000000;
 }
 
-#contact_section h4{
+#contact_section h4 {
   font-size: 1rem;
 }
 
-.contact_detail{
-margin-top: 1%;
+.contact_detail {
+  margin-top: 1%;
 }
 
-.Copyright{
+.Copyright {
   padding: 5px 0;
 }
 
 /* Style the layouts for About page */
-#my_square_pic{
+#my_square_pic {
   border-radius: 4px;
   border: solid 5px #297BB8;
   width: 60%;
@@ -338,64 +384,62 @@ margin-top: 1%;
   text-align: center;
 }
 
-#about_me  p {
+#about_me p {
   text-align: left;
 }
 
-#about_me  h1{
+#about_me h1 {
   font-size: 1.40rem;
   margin-bottom: 10px;
   margin-top: 25px;
 }
 
-#DT_process{
+#DT_process {
   text-align: center;
 }
 
-#DT_process > h1{
+#DT_process>h1 {
   font-size: 1.40rem;
   margin-bottom: 25px;
   margin-top: 25px;
 }
 
-#my_tool{
+#my_tool {
   text-align: center;
   margin-bottom: 30px;
-
 }
 
-#my_tool > h1{
+#my_tool>h1 {
   font-size: 1.40rem;
   margin-bottom: 25px;
   margin-top: 25px;
-
 }
 
 /* Style the layouts for Perfect Home Case Study page */
-.main_image{
+.main_image {
   margin-top: 30px;
   text-align: center;
 }
 
-.main_headings>h1{
+.main_headings>h1 {
   font-size: 1.4rem;
 }
 
-.bullet_list{
+.bullet_list {
   font-size: 0.9rem;
 }
 
-#styleguide_button{
+#styleguide_button {
   text-align: center;
 }
 
-#body_perfecthome_page h1{
+#body_perfecthome_page h1 {
   color: #2A3E46
 }
 
-.key_features h3{
+.key_features h3 {
   background-color: #2A3E46;
-  color:#ffffff;
+  color: #ffffff;
   padding: 20px 20px;
   text-align: left;
   border-radius: 8px;
@@ -404,202 +448,348 @@ margin-top: 1%;
   margin-right: 20px;
 }
 
-.sub_headings h3{
+.sub_headings h3 {
   color: #B8705C;
   font-size: 1rem;
 }
 
 /* 1 rem= 16px */
-.responsive_design h4{
+.responsive_design h4 {
   border-bottom: solid 3px #B8705C;
   width: 7rem;
   font-weight: bold;
   font-size: 1rem;
 }
 
-.responsive_design h5{
-    font-size: 0.9rem;
+.responsive_design h5 {
+  font-size: 0.9rem;
 }
 
-.responsive_design p{
-    margin: 20px 0;
+.responsive_design p {
+  margin: 20px 0;
 }
 
-#tab_img{
+#tab_img {
   margin-bottom: 30px;
 }
 
 [class*="col-"] {
- float: left;
- display: block;
- }
+  float: left;
+  display: block;
+}
 
 .row::after {
- content: "";
- clear: both;
- display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
+
+/* Style the layouts for Contact Me page */
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 100%;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+.main_headings_contactpage h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+form ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1rem;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  font-weight: bold;
+  text-align: left;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1rem sans-serif;
+
+  /* Uniform text field size */
+  width: 100%;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5rem;
+}
+
+#contactPage_button{
+  /* Align buttons with the text fields */
+  text-align: center;
+}
+
+form button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 1px solid #000000;
+
+}
+
+
 
 /* Add  two media queries: one for medium screen sizes and one for large screen sizes for the breakpoints,
 and add code inside of your media queries to ensure your site is responsive and looks good on any device */
-
 /* Medium devices (640px and larger)*/
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding:20px 0 13px;
+    padding: 20px 0 13px;
+    /* position: relative; */
   }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  .logo{
+
+  .logo {
     width: 6%;
     margin-right: 40px;
   }
-  #my_circle_pic{
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+  margin: 1em 0;
+}
+
+  #my_circle_pic {
     width: 80%
   }
+
   #hero_section h1 {
     font-size: 1.6rem;
+    margin-top: 50px;
+
   }
-  p{
+
+  p {
     font-size: 1rem;
   }
+
   #work_section h2 {
     font-size: 1.7rem;
   }
+
   #work_section h3 {
     font-size: 1.4rem;
   }
+
   /* Use a 2-column layout on your home page*/
   .col-md-6 {
     width: 50%;
   }
-  .left-col{
-    width:50%;
-    padding:0;
+
+  .left-col {
+    width: 50%;
+    padding: 0;
   }
-  .right-col{
-    width:50%;
-    padding:0;
+
+  .right-col {
+    width: 50%;
+    padding: 0;
     padding-left: 40px;
   }
-  footer>div{
-    clear:none;
+
+  footer>div {
+    clear: none;
   }
-  .Copyright p{
-  font-size: 1rem;
+
+  .Copyright p {
+    font-size: 1rem;
   }
-  #contact_section h4{
+
+  #contact_section h4 {
     font-size: 1.2rem;
   }
 
-  .features{
+  .features {
     text-align: center;
   }
-  .low_mid_screens{
+
+  .low_mid_screens {
     text-align: center;
   }
+
   img {
     width: 100%;
   }
-  .key_features_gif{
+
+  .key_features_gif {
     width: 40%;
   }
-  .both_screens{
-      width: 40%;
+
+  .both_screens {
+    width: 40%;
   }
-  #my_square_pic{
+
+  #my_square_pic {
     width: 45%;
     margin-top: 40px;
   }
-  #about_me  p{
+
+  #about_me p {
     padding: 0 20px;
   }
-  #about_me  h1{
+
+  #about_me h1 {
     font-size: 1.6rem;
   }
-  #DT_process > h1{
+
+  #DT_process>h1 {
     font-size: 1.6rem;
   }
-  #my_tool > h1{
+
+  #my_tool>h1 {
     font-size: 1.6rem;
   }
-  .main_headings>h1{
+
+  .main_headings>h1 {
     font-size: 1.6rem;
   }
-  .key_features h3{
+
+  .key_features h3 {
     padding: 25px 25px;
     font-size: 1.4rem;
   }
-  .sub_headings h3{
+
+  .sub_headings h3 {
     font-size: 1.4rem;
   }
-  .responsive_design h4{
+
+  .responsive_design h4 {
     font-size: 1.2rem;
   }
-  .responsive_design h5{
-    font-size: 1rem;
-  }
-  .bullet_list{
+
+  .responsive_design h5 {
     font-size: 1rem;
   }
 
+  .bullet_list {
+    font-size: 1rem;
+  }
+
+/*Contact Us Page*/
+  .main_headings_contactpage h1 {
+    margin-top: 60px;
+  }
+  form {
+    width: 70%;
+  }
 }
 
 /* Larger devices (1024px or larger)*/
 @media only screen and (min-width: 1024px) {
   header {
     text-align: unset;
-    padding:20px 0 13px;
+    padding: 20px 0 13px;
+    /* position: relative; */
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
     margin-right: 50px;
   }
+
   /* Use a 2-column layout on the home page*/
   .col-lg-5 {
     width: 50%;
     margin: auto;
   }
-  .logo{
+
+  .logo {
     width: 4%;
     margin-right: 40px;
   }
-  #my_circle_pic{
+
+  #my_circle_pic {
     width: 60%;
-    margin-top:40px;
+    margin-top: 40px;
   }
+
   #hero_section h1 {
     font-size: 2rem;
   }
-  p{
+
+  p {
     font-size: 1.2rem;
   }
+
   #work_section h2 {
     font-size: 2rem;
   }
+
   #work_section h3 {
     font-size: 1.6rem;
   }
-  footer>div{
-    clear:none;
+
+  footer>div {
+    clear: none;
   }
-  .Copyright p{
-  font-size: 1.1rem;
+
+  .Copyright p {
+    font-size: 1.1rem;
   }
-  .ux_designer{
+
+  .ux_designer {
     text-align: left;
     /* padding-left: 5%; */
     padding-top: 1%;
     float: left;
     display: inline-block;
   }
-  .contact_detail{
+
+  .contact_detail {
     text-align: left;
     /* padding-right: 5%; */
     padding-top: 1%;
@@ -607,96 +797,133 @@ and add code inside of your media queries to ensure your site is responsive and 
     display: inline-block;
     margin: 0;
   }
-  .left-col{
-   width:60%;
-   padding:0;
- }
- .right-col{
-   width:40%;
-   padding:0;
-   padding-left: 40px;
- }
- .features{
-   text-align: center;
- }
- .low_mid_screens{
-   text-align: center;
-   float: left;
- }
- img {
-   width: 100%;
- }
- .key_features_gif{
-   width: 30%;
- }
- .both_screens{
-     width: 100%;
-   }
- #about_me  p{
-   padding: 0 20px;
- }
- #about_me  h1{
-   font-size: 2rem;
- }
- #my_square_pic{
-   width: 30%;
-   margin-top: 10px;
- }
- #DT_process > h1{
-   font-size: 2rem;
- }
- #my_tool > h1{
-   font-size: 2rem;
- }
- .main_headings>h1{
-   font-size: 1.8rem;
- }
- .key_features h3{
-   padding: 30px 30px;
-   font-size: 1.6rem;
-}
-.sub_headings{
-  clear: both;
-}
-.all_screens{
-  text-align: center;
-}
- .sub_headings h3{
-   font-size: 1.6rem;
- }
- .responsive_design h4{
-   font-size: 1.4rem;
- }
- .responsive_design h5{
-   font-size: 1.2rem;
- }
- .bullet_list{
-   font-size: 1.2rem;
- }
- .container {
-   max-width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
- }
+
+  .left-col {
+    width: 60%;
+    padding: 0;
+  }
+
+  .right-col {
+    width: 40%;
+    padding: 0;
+    padding-left: 40px;
+  }
+
+  .features {
+    text-align: center;
+  }
+
+  .low_mid_screens {
+    text-align: center;
+    float: left;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .key_features_gif {
+    width: 30%;
+  }
+
+  .both_screens {
+    width: 100%;
+  }
+
+  #about_me p {
+    padding: 0 20px;
+  }
+
+  #about_me h1 {
+    font-size: 2rem;
+  }
+
+  #my_square_pic {
+    width: 30%;
+    margin-top: 10px;
+  }
+
+  #DT_process>h1 {
+    font-size: 2rem;
+  }
+
+  #my_tool>h1 {
+    font-size: 2rem;
+  }
+
+  .main_headings>h1 {
+    font-size: 1.8rem;
+  }
+
+  .key_features h3 {
+    padding: 30px 30px;
+    font-size: 1.6rem;
+  }
+
+  .sub_headings {
+    clear: both;
+  }
+
+  .all_screens {
+    text-align: center;
+  }
+
+  .sub_headings h3 {
+    font-size: 1.6rem;
+  }
+
+  .responsive_design h4 {
+    font-size: 1.4rem;
+  }
+
+  .responsive_design h5 {
+    font-size: 1.2rem;
+  }
+
+  .bullet_list {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form {
+    width: 50%;
+  }
 }
 
 /*To make illustration responsive add the following code in your CSS to the class for your image */
-.berlin-illustration{
-width: 100%;
-max-width: 100%;
-height: auto;
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Sun rotate animation */
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -709,9 +936,15 @@ height: auto;
 
 /* cloud translate animation */
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -719,17 +952,23 @@ height: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 /*Or the short way:
 
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }*/
-
 /*For the cloud in the back, simply repeat the process. First, create a new keyframe animation, this time with the name cloud-move-reverse*/
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
@@ -752,7 +991,6 @@ div.navigation a{
     z-index: 0;
     cursor: pointer;
 } */
-
 /* Top and Bottom borders go out */
 /* div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
 {
