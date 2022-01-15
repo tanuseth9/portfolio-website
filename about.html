@@ -10,21 +10,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
-<body id=body_about_page  class="body">
+<body id="body_about_page"  class="body">
   <header>
-    <div class=" container row">
-    <img class="logo" src="img/home_page/tanu_seth_logo.png" alt="Logo">
-    <h2 class="designer">UX/UI Designer</h2>
-    <nav>
-      <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+    <div class="container row active_selected">
+      <div class="navtoggle" id="myNavtoggle">
+      <a href="index.html"><img class="logo" src="img/home_page/tanu_seth_logo.png" alt="Logo"></a>
+      <h2 class="designer">UX/UI Designer</h2>
+      <nav>
+        <!-- <div class="navigation red topBotomBordersOut">       -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </ul>
+        <!-- </div> -->
+      </nav>
+    </div>
+    </div>
   </header>
   <main>
     <div id="about_me">
@@ -92,6 +98,8 @@
         <p>Copyright Tanu Seth 2021</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
