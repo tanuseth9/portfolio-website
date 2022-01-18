@@ -53,7 +53,6 @@ return false;
 
 
 
-
 //Call the function of the user input that the field user name is filled
 
 function submitFunction() {
