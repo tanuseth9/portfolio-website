@@ -14,17 +14,17 @@ Link Color (Cyan Cornflower Blue): #297BB8
   box-sizing: border-box;
 }
 
-header{
+header {
   padding: 5%;
 }
 
-header{
-  padding: 10px 0 4px;
-  padding-right: 0;
+header {
+  padding: 10px 0px 4px;
+  /*top, right and left, bottom */
   position: fixed;
   width: 100%;
-  background-color:#ffffff;
-  box-shadow:  2px 2px 5px 1px #915f1c;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px 1px #915f1c;
 }
 
 main {
@@ -100,7 +100,6 @@ a:focus {
 a:active {
   color: #3A668A;
   text-decoration: none;
-  /* Underlining when hover
   /* selected link with blue color*/
 }
 
@@ -114,18 +113,15 @@ a:active {
 } */
 /* Create a button styling for the “Learn more”, and view case study buttons and Add a transition to your buttons. */
 .button {
-  display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block */
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #000000;
-  color: #ffffff;
-  /* needed to override the default link color */
+  color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 0.6rem 2.6rem;
   border-radius: 4px;
   border-bottom: 2px solid #000000; /* width of the border, type, color */
-  transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  /*transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];*/
+  transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;   /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay] */
   margin: 10px;
 }
 
@@ -146,8 +142,8 @@ a:active {
 
 /* Create a button styling for the “View full style guide” button */
 .button.styleguide {
-  background-color: #B8705C;
-  border-color: #B8705C;
+  background-color: #AF614C;
+  border-color: #AF614C;
 }
 
 .button.styleguide:hover {
@@ -181,8 +177,7 @@ img {
 
 /* Add CSS styling to the header and navigation bar */
 header {
-  /* text-align: center; */
-  padding: 10px 0;
+  padding: 10px 0; /* Top and Bottom, Right and left */
 }
 
 .logo {
@@ -207,17 +202,15 @@ header {
   width: 100%;
   margin-top: 15px;
 } */
-
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
-  }
+}
 
 /* nav>ul>li {
   display: inline-block;
 } */
-
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
@@ -226,7 +219,7 @@ nav>ul>li>a {
   color: #000000;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle.navtoggle.responsive {
   position: relative;
 }
 
@@ -237,23 +230,23 @@ nav>ul>li>a {
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 /* Add CSS styling to the hero section */
 #hero_section {
-  background-color:#d9d3cf;;
+  background-color: #d9d3cf;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -279,9 +272,9 @@ nav>ul>li>a {
   text-align: left;
 }
 
-.my_detail{
-  width:80%;
-  margin:auto;"
+.my_detail {
+  width: 80%;
+  margin: auto;
 }
 
 #my_circle_pic {
@@ -293,13 +286,12 @@ nav>ul>li>a {
 /* Add CSS styling to the work section */
 #work_section {
   background-color: #ffffff;
-  /* padding: 20px 0; */
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
-.padding_main_section{
+.padding_main_section {
   padding: 5%;
 }
 
@@ -330,7 +322,7 @@ nav>ul>li>a {
   text-align: left;
 }
 
-/* Add CSS styling to your footer (contact) section.*/
+/* Add CSS styling to your footer (contact) section */
 footer {
   background-color: #d9d3cf;
   padding: 5px 0;
@@ -339,22 +331,22 @@ footer {
   text-align: center;
 }
 
-footer>div {
+footer > div {
   display: block;
   clear: both;
 }
 
-footer>div>div>ul {
+footer > div > div > ul {
   display: block;
   list-style-type: none;
   padding: 0;
 }
 
-footer>div>div>ul>li {
+footer > div > div > ul > li {
   display: inline-block;
 }
 
-footer>div>div>ul>li>a {
+footer > div > div > ul > li > a {
   padding: 0 15px;
   text-transform: capitalize;
   text-decoration: none;
@@ -429,7 +421,7 @@ footer>div>div>ul>li>a {
   text-align: center;
 }
 
-.main_headings>h1 {
+.main_headings > h1 {
   font-size: 1.4rem;
 }
 
@@ -497,8 +489,7 @@ form {
   /* Center the form on the page */
   margin: 0 auto;
   width: 100%;
-  /* Form outline */
-  padding: 1em;
+  padding: 1em; /* Form outline */
   border: 1px solid #CCC;
   border-radius: 1em;
 }
@@ -509,7 +500,7 @@ form {
   font-size: 1.8rem;
 }
 
-form ul{
+form ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -531,13 +522,9 @@ textarea {
   /* To make sure that all text fields have the same font settings
      By default, textareas have a monospace font */
   font: 1rem sans-serif;
-
-  /* Uniform text field size */
-  width: 100%;
+  width: 100%; /* Uniform text field size */
   box-sizing: border-box;
-
-  /* Match form field borders */
-  border: 1px solid #999;
+  border: 1px solid #999; /* Match form field borders */
 }
 
 input:focus,
@@ -548,13 +535,11 @@ textarea:focus {
 
 textarea {
   /* Align multiline text fields with their labels */
-  vertical-align: top;
-
-  /* Provide space to type some text */
+  vertical-align: top;   /* Provide space to type some text */
   height: 5rem;
 }
 
-#contactPage_button{
+#contactPage_button {
   /* Align buttons with the text fields */
   text-align: center;
 }
@@ -562,15 +547,12 @@ textarea {
 form button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
-  margin-left: .5em;
+  margin-left: 0.5em;
   text-align: center;
   padding: 10px;
   border-radius: 4px;
   border-bottom: 1px solid #000000;
-
 }
-
-
 
 /* Add  two media queries: one for medium screen sizes and one for large screen sizes for the breakpoints,
 and add code inside of your media queries to ensure your site is responsive and looks good on any device */
@@ -578,11 +560,10 @@ and add code inside of your media queries to ensure your site is responsive and 
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
-    /* position: relative; */
+    padding: 20px 0 13px;   /* position: relative; */
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -605,9 +586,9 @@ and add code inside of your media queries to ensure your site is responsive and 
     display: none;
   }
 
-  nav > ul {
-  margin: 1em 0;
-}
+  nav>ul {
+    margin: 1em 0;
+  }
 
   #my_circle_pic {
     width: 80%;
@@ -617,7 +598,6 @@ and add code inside of your media queries to ensure your site is responsive and 
   #hero_section h1 {
     font-size: 1.6rem;
     margin-top: 50px;
-
   }
 
   p {
@@ -726,10 +706,11 @@ and add code inside of your media queries to ensure your site is responsive and 
     font-size: 1rem;
   }
 
-/*Contact Us Page*/
+  /*Contact Us Page*/
   .main_headings_contactpage h1 {
     margin-top: 60px;
   }
+
   form {
     width: 70%;
   }
@@ -761,14 +742,13 @@ and add code inside of your media queries to ensure your site is responsive and 
     margin-right: 30px;
   }
 
-  #my_circle_pic {
+  /* #my_circle_pic {
     width: 60%;
     margin-top: 40px;
-  }
-
-  .my_detail{
-    width:65%;
-    margin:auto;"
+  } */
+  .my_detail {
+    width: 65%;
+    margin: auto;
   }
 
   #hero_section h1 {
@@ -902,12 +882,13 @@ and add code inside of your media queries to ensure your site is responsive and 
     margin-left: auto;
     margin-right: auto;
   }
+
   form {
     width: 50%;
   }
 }
 
-/*To make illustration responsive add the following code in your CSS to the class for your image */
+/* To make illustration resp ive add the following code in your CSS to the class for your image */
 .berlin-illustration {
   width: 100%;
   max-width: 100%;
