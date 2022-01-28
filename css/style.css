@@ -183,7 +183,7 @@ header {
 .logo {
   max-width: 7%;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 15px;
   margin-left: 10px;
   float: left;
 }
@@ -194,7 +194,7 @@ header {
 
 .designer {
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 /* nav {
@@ -556,11 +556,17 @@ form button {
 
 /* Add  two media queries: one for medium screen sizes and one for large screen sizes for the breakpoints,
 and add code inside of your media queries to ensure your site is responsive and looks good on any device */
+
 /* Medium devices (640px and larger)*/
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;   /* position: relative; */
+  }
+
+  .designer {
+    display: inline-block;
+    font-size: 1.3rem;
   }
 
   nav > ul > li {
@@ -739,7 +745,6 @@ and add code inside of your media queries to ensure your site is responsive and 
 
   .logo {
     width: 4%;
-    margin-right: 30px;
   }
 
   /* #my_circle_pic {
