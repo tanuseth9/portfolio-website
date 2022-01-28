@@ -219,9 +219,9 @@ nav > ul > li > a {
   color: #000000;
 }
 
-.navtoggle.navtoggle.responsive {
+/* .navtoggle.responsive {
   position: relative;
-}
+} */
 
 .navtoggle li .icon {
   position: absolute;
