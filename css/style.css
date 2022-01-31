@@ -219,6 +219,11 @@ nav > ul > li > a {
   color: #000000;
 }
 
+.active_link{
+  color: red;
+  text-decoration: underline;
+}
+
 /* .navtoggle.responsive {
   position: relative;
 } */
