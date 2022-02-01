@@ -301,7 +301,7 @@ nav > ul > li > a {
 }
 
 #work_section h2 {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 0;
   padding: 0;
   text-align: center;
@@ -727,10 +727,6 @@ and add code inside of your media queries to ensure your site is responsive and 
   }
 
   /* Work Section */
-
-  #work_section h2 {
-    margin-top: 10%;
-  }
 
   .main_image {
     margin-top: 15%;
