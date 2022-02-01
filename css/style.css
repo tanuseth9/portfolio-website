@@ -422,7 +422,7 @@ footer > div > div > ul > li > a {
 
 /* Style the layouts for Perfect Home Case Study page */
 .main_image {
-  margin-top: 20%;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -732,6 +732,11 @@ and add code inside of your media queries to ensure your site is responsive and 
     margin-top: 10%;
   }
 
+  .main_image {
+    margin-top: 15%;
+    text-align: center;
+  }
+
 }
 
 /* Larger devices (1024px or larger)*/
@@ -831,6 +836,11 @@ and add code inside of your media queries to ensure your site is responsive and 
 
   img {
     width: 100%;
+  }
+
+  .main_image {
+    margin-top: 3%;
+    text-align: center;
   }
 
   .key_features_gif {
