@@ -32,12 +32,11 @@ main {
 }
 
 /* Define font-size, font-weight and line-height for all your default text elements (body, headers, etc.) */
-Body {
+body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
+  line-height: 1.6;   /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
   display: inline;
 }
@@ -301,7 +300,7 @@ nav > ul > li > a {
 }
 
 #work_section h2 {
-  /* margin-top: 20px; */
+  margin-top: 20px;
   margin-bottom: 0;
   padding: 0;
   text-align: center;
@@ -567,6 +566,10 @@ and add code inside of your media queries to ensure your site is responsive and 
   header {
     text-align: unset;
     padding: 20px 0 13px;   /* position: relative; */
+  }
+
+  #work_section h2 {
+    margin-top: 0px !important;
   }
 
   .designer {
