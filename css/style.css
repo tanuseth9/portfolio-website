@@ -569,7 +569,7 @@ and add code inside of your media queries to ensure your site is responsive and 
   }
 
   #work_section h2 {
-    margin-top: 0px !important;
+    margin-top: 0px !important; /* important is for overlaping previour atributes. */
   }
 
   .designer {
